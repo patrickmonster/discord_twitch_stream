@@ -44,15 +44,15 @@ client.on("ready", () => {
 
 client.login(process.env.DISCORD_TOKEN);
 ////////////////////////////////////////트위치
-const tmi = require("tmi.js");
-const twitch = new tmi.Client(twitch_options);
-twitch.on("timeout", (channel, msg, self, time, tags) => {
-    twitch_options.target_channel.send(`타임아웃 [${channel}](${time}): ${msg}`);
-});
-twitch.on("ban", (channel, msg, self, tags) => {
-    twitch_options.target_channel.send(`벤 [${channel}]: ${msg}`);
-});
-twitch.on("join", (channel)=>{
-    console.log(`${channel}방송을 시청중...`);
-});
-twitch.connect().catch(console.error);
+// const tmi = require("tmi.js");
+// const twitch = new tmi.Client(twitch_options);
+// twitch.on("timeout", (channel, msg, self, time, tags) => {
+//     twitch_options.target_channel.send(`타임아웃 [${channel}](${time}): ${msg}`);
+// });
+// twitch.on("ban", (channel, msg, self, tags) => {
+//     twitch_options.target_channel.send(`벤 [${channel}]: ${msg}`);
+// });
+// twitch.on("join", (channel)=>{
+//     console.log(`${channel}방송을 시청중...`);
+// });
+// twitch.connect().catch(console.error);
